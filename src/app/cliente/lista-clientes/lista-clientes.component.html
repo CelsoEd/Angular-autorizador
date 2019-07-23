@@ -1,0 +1,28 @@
+<fieldset>
+  <legend>Clientes</legend>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>Situação</th>
+    </tr>
+
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let cliente of clientes">
+      <td>{{cliente.nome}}</td>
+      <td>{{cliente.cpf}}</td>
+<!--      <td>-->
+<!--        <ng-container *ngIf="conta.estado == 'ATIVA'">-->
+<!--          {{conta.saldo | currency:'R$'}}-->
+<!--        </ng-container>-->
+<!--      </td>-->
+    </tr>
+
+    </tbody>
+  </table>
+
+</fieldset>
